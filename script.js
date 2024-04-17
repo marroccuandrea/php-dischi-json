@@ -4,14 +4,16 @@ createApp({
     data() {
         return {
             title: 'PHP Dischi',
-            apiUrl: 'server.php'
+            apiUrl: 'server.php',
+            diskList: []
         }
     },
     methods: {
         getApi() {
             axios.get(this.apiUrl)
                 .then(result => {
-                    console.log(result.data);
+                    this.diskList = result.data;
+                    console.log(this.diskList);
                 })
         }
     },
