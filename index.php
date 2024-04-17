@@ -17,8 +17,10 @@
 
 <body>
     <div id="app">
-        <div class="container my-5 text-center">
-            <h1>Dischi PHP</h1>
+        <div class="container-fluid mb-5">
+            <div class="container h-100 d-flex align-items-center">
+                <h2>Logo</h2>
+            </div>
         </div>
         <div class="container my-5">
             <div class="row row-cols-3">
