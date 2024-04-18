@@ -12,6 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.js" integrity="sha512-pmaEGtUAy7E5gRmwjLqQAD/QWw0dL4Z59b6b+2HQkqQwQ+HcPLLb9/KbUNo5zr10WuXmbivK9nYVZOyDkMgZMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- CSS  -->
     <link rel="stylesheet" href="style.css">
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>PHP DISCHI JSON</title>
 </head>
 
@@ -66,7 +68,9 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">{{ item.title }}</h5>
                             <p class="card-text">{{ item.author }}</p>
+                            <h6>{{ item.genre }}</h6>
                             <h5>{{ item.year }}</h5>
+                            <button @click.stop="removeAlbum(index)" class="btn btn-danger delete"><i class="fa-regular fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>

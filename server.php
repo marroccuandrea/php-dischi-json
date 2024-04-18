@@ -16,6 +16,13 @@ if (isset($_POST['newAlbumTitle'])) {
     file_put_contents('dischi.json', json_encode($disc));
 }
 
+// Se arriva in POST indexToDelete, elimino l'elemento all'indice e aggiorno i dati
+if (isset($_POST['indexToDelete'])) {
+    $indexToDelete = $_POST['indexToDelete'];
+    array_splice($disc, $indexToDelete, 1);
+    file_put_contents('dischi.json', json_encode($disc));
+}
+
 
 header('Content-Type: application/json');
 

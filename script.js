@@ -33,7 +33,15 @@ createApp({
 
             axios.post(this.apiUrl, data)
                 .then(result => {
-                    console.log(result.data);
+                    this.diskList = result.data;
+                })
+        },
+        removeAlbum(index) {
+            const data = new FormData();
+            data.append('indexToDelete', index);
+            axios.post(this.apiUrl, data)
+                .then(result => {
+                    this.diskList = result.data;
                 })
         }
     },
