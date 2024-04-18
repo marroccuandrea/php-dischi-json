@@ -17,10 +17,37 @@
 
 <body>
     <div id="app">
-        <div class="container-fluid mb-5">
-            <div class="container h-100 d-flex align-items-center">
-                <h2>Logo</h2>
+        <div class="container-fluid mb-5 d-flex align-items-center">
+            <div class="container">
+                <img class="logo" src="png-clipart-spotify-logo-spotify-computer-icons-podcast-music-apps-miscellaneous-angle-1-e1614848134495.png" alt="">
             </div>
+        </div>
+        <div class="text-white d-flex justify-content-center text-center">
+
+            <div class="d-flex flex-column mx-2">
+                <label for="title">Title</label>
+                <input class="form-control" type="text" name="title">
+            </div>
+
+            <div class="d-flex flex-column mx-2">
+                <label for="author">Author</label>
+                <input class="form-control" type="text" name="author">
+            </div>
+
+            <div class="d-flex flex-column mx-2">
+                <label for="year">Year</label>
+                <input class="form-control" type="text" name="year">
+            </div>
+
+            <div class="d-flex flex-column mx-2">
+                <label for="genre">Genre</label>
+                <input class="form-control" type="text" name="genre">
+            </div>
+
+            <div class="d-flex flex-column mt-4 mx-2">
+                <button class="btn btn-success">Aggiungi</button>
+            </div>
+
         </div>
         <div class="container my-5">
             <div class="row row-cols-3">
