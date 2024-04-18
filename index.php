@@ -22,6 +22,7 @@
                 <img class="logo" src="png-clipart-spotify-logo-spotify-computer-icons-podcast-music-apps-miscellaneous-angle-1-e1614848134495.png" alt="">
             </div>
         </div>
+        <h1 class="text-center text-white mb-5">PHP Dischi JSON</h1>
         <div class="text-white d-flex justify-content-center text-center">
 
             <div class="d-flex flex-column mx-2">
