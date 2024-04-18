@@ -28,31 +28,31 @@
 
                 <div class="d-flex flex-column mx-2">
                     <label for="title">Title</label>
-                    <input class="form-control" type="text" name="title">
+                    <input v-model.trim="newAlbum.title" class="form-control" type="text" name="title">
                 </div>
 
                 <div class="d-flex flex-column mx-2">
                     <label for="author">Author</label>
-                    <input class="form-control" type="text" name="author">
+                    <input v-model.trim="newAlbum.author" class="form-control" type="text" name="author">
                 </div>
 
                 <div class="d-flex flex-column mx-2">
                     <label for="year">Year</label>
-                    <input class="form-control" type="text" name="year">
+                    <input v-model.trim="newAlbum.year" class="form-control" type="text" name="year">
                 </div>
 
                 <div class="d-flex flex-column mx-2">
                     <label for="genre">Genre</label>
-                    <input class="form-control" type="text" name="genre">
+                    <input v-model.trim="newAlbum.genre" class="form-control" type="text" name="genre">
                 </div>
 
                 <div class="d-flex flex-column mx-2">
                     <label for="image">Image (Url)</label>
-                    <input class="form-control" type="text" name="image">
+                    <input v-model="newAlbum.poster" class="form-control" type="text" name="image">
                 </div>
 
                 <div class="mt-4 mx-2">
-                    <button class="btn btn-success">Aggiungi</button>
+                    <button @click.stop="addNewAlbum" class="btn btn-success">Aggiungi</button>
                 </div>
 
             </div>
