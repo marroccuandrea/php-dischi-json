@@ -34,6 +34,7 @@ createApp({
             axios.post(this.apiUrl, data)
                 .then(result => {
                     this.diskList = result.data;
+                    this.newAlbum = { title: '', author: '', year: '', genre: '', poster: '' };
                 })
         },
         removeAlbum(index) {
